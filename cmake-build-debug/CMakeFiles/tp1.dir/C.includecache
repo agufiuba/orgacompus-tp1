@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/agu/Fiuba/orgacompus/tp1/ant_constants.h
+/home/christian/fiuba/compus/orgacompus-tp1/ant_constants.h
 
-/home/agu/Fiuba/orgacompus/tp1/ant_engine.c
+/home/christian/fiuba/compus/orgacompus-tp1/ant_engine.c
 ant_engine.h
-/home/agu/Fiuba/orgacompus/tp1/ant_engine.h
+/home/christian/fiuba/compus/orgacompus-tp1/ant_engine.h
 artist_ant.h
-/home/agu/Fiuba/orgacompus/tp1/artist_ant.h
+/home/christian/fiuba/compus/orgacompus-tp1/artist_ant.h
 unistd.h
 -
 stdlib.h
@@ -22,13 +22,13 @@ stdio.h
 string.h
 -
 
-/home/agu/Fiuba/orgacompus/tp1/ant_engine.h
+/home/christian/fiuba/compus/orgacompus-tp1/ant_engine.h
 stdint.h
 -
 unistd.h
 -
 
-/home/agu/Fiuba/orgacompus/tp1/artist_ant.c
+/home/christian/fiuba/compus/orgacompus-tp1/artist_ant.c
 stdio.h
 -
 getopt.h
@@ -42,13 +42,13 @@ stdlib.h
 assert.h
 -
 ant_engine.h
-/home/agu/Fiuba/orgacompus/tp1/ant_engine.h
+/home/christian/fiuba/compus/orgacompus-tp1/ant_engine.h
 artist_ant.h
-/home/agu/Fiuba/orgacompus/tp1/artist_ant.h
+/home/christian/fiuba/compus/orgacompus-tp1/artist_ant.h
 
-/home/agu/Fiuba/orgacompus/tp1/artist_ant.h
+/home/christian/fiuba/compus/orgacompus-tp1/artist_ant.h
 unistd.h
 -
 ant_constants.h
-/home/agu/Fiuba/orgacompus/tp1/ant_constants.h
+/home/christian/fiuba/compus/orgacompus-tp1/ant_constants.h
 

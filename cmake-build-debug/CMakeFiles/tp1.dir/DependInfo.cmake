@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/agu/Fiuba/orgacompus/tp1/ant_engine.c" "/home/agu/Fiuba/orgacompus/tp1/cmake-build-debug/CMakeFiles/tp1.dir/ant_engine.c.o"
-  "/home/agu/Fiuba/orgacompus/tp1/artist_ant.c" "/home/agu/Fiuba/orgacompus/tp1/cmake-build-debug/CMakeFiles/tp1.dir/artist_ant.c.o"
+  "/home/christian/fiuba/compus/orgacompus-tp1/ant_engine.c" "/home/christian/fiuba/compus/orgacompus-tp1/cmake-build-debug/CMakeFiles/tp1.dir/ant_engine.c.o"
+  "/home/christian/fiuba/compus/orgacompus-tp1/artist_ant.c" "/home/christian/fiuba/compus/orgacompus-tp1/cmake-build-debug/CMakeFiles/tp1.dir/artist_ant.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

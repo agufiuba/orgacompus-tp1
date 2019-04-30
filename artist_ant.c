@@ -1,12 +1,7 @@
-#include <stdio.h>
 #include <getopt.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <assert.h>
 
 #include "ant_engine.h"
-#include "artist_ant.h"
 
 static uint32_t grid_width;
 static uint32_t grid_height;
@@ -113,8 +108,7 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-void *
-make_grid(uint32_t w, uint32_t h, colour_t c) {
+void * make_grid(uint32_t w, uint32_t h, colour_t c) {
     grid.width = w;
     grid.height = h;
 
@@ -130,8 +124,36 @@ make_grid(uint32_t w, uint32_t h, colour_t c) {
     return &grid;
 }
 
-void *
-make_ant(uint32_t xini, uint32_t yini) {
+void *make_rules(char *rs, enum colour *cs) {
+    int n;
+    if (strlen(rs) == 1) n = 1;
+    else n = (strlen(rs) + 1) / 2;
+    enum rotation *rules = malloc(sizeof(enum rotation) * 6);
+    int j = 0;
+    for (int i = 0; i < n; i++) {
+        if (rs[j] == 'L') rules[cs[i]] = RL;
+        else if (rs[j] == 'R') rules[cs[i]] = RR;
+        j += 2;
+    }
+    return rules;
+}
+
+void *make_palette(unsigned char *colours) {
+    int n;
+    if (strlen(colours) == 1) n = 1;
+    else n = (strlen(colours) + 1) / 2;
+    enum colour *colors = malloc(sizeof(enum colour) * n);
+    int j = 0;
+    static char *index = "RGBYNW";
+    for (int i = 0; i < n; i++) {
+        char *p = strchr(index, colours[j]);
+        colors[i] = p - index;
+        j += 2;
+    }
+    return colors;
+}
+
+void * make_ant(uint32_t xini, uint32_t yini) {
     ant.x = xini;
     ant.y = yini;
     ant.o = NORTH;
@@ -178,8 +200,7 @@ void grid_out() {
     }
 }
 
-uint32_t
-as_int(void *arg, uint32_t from, uint32_t to) {
+uint32_t as_int(void *arg, uint32_t from, uint32_t to) {
 
     assert(from < to);
 
@@ -197,8 +218,7 @@ as_int(void *arg, uint32_t from, uint32_t to) {
     return n;
 }
 
-void
-show_help(char *p) {
+void show_help(char *p) {
     printf("  %s -g <dimensions> -p <colors> -r <rules> -t <n>\n", p);
     printf("  -g --grid: wxh\n");
     printf("  -p --palette: Combination of R|G|B|Y|N|W\n");
@@ -208,13 +228,11 @@ show_help(char *p) {
     printf("  -v --verbose: Version number\n");
 }
 
-void
-show_version() {
+void show_version() {
     printf("v0.0.0\n");
 }
 
-colour_t
-get_colour(char c) {
+colour_t get_colour(char c) {
     static char *index = "RGBYNW";
 
     char *p = strchr(index, c);
