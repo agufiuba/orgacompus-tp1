@@ -70,29 +70,29 @@ CMakeFiles/tp1.dir/artist_ant.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp1.dir/artist_ant.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/christian/fiuba/compus/orgacompus-tp1/artist_ant.c -o CMakeFiles/tp1.dir/artist_ant.c.s
 
-CMakeFiles/tp1.dir/ant_engine.c.o: CMakeFiles/tp1.dir/flags.make
-CMakeFiles/tp1.dir/ant_engine.c.o: ../ant_engine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/fiuba/compus/orgacompus-tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tp1.dir/ant_engine.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tp1.dir/ant_engine.c.o   -c /home/christian/fiuba/compus/orgacompus-tp1/ant_engine.c
+CMakeFiles/tp1.dir/paint.c.o: CMakeFiles/tp1.dir/flags.make
+CMakeFiles/tp1.dir/paint.c.o: ../paint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/fiuba/compus/orgacompus-tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tp1.dir/paint.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tp1.dir/paint.c.o   -c /home/christian/fiuba/compus/orgacompus-tp1/paint.c
 
-CMakeFiles/tp1.dir/ant_engine.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tp1.dir/ant_engine.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/christian/fiuba/compus/orgacompus-tp1/ant_engine.c > CMakeFiles/tp1.dir/ant_engine.c.i
+CMakeFiles/tp1.dir/paint.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tp1.dir/paint.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/christian/fiuba/compus/orgacompus-tp1/paint.c > CMakeFiles/tp1.dir/paint.c.i
 
-CMakeFiles/tp1.dir/ant_engine.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp1.dir/ant_engine.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/christian/fiuba/compus/orgacompus-tp1/ant_engine.c -o CMakeFiles/tp1.dir/ant_engine.c.s
+CMakeFiles/tp1.dir/paint.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp1.dir/paint.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/christian/fiuba/compus/orgacompus-tp1/paint.c -o CMakeFiles/tp1.dir/paint.c.s
 
 # Object files for target tp1
 tp1_OBJECTS = \
 "CMakeFiles/tp1.dir/artist_ant.c.o" \
-"CMakeFiles/tp1.dir/ant_engine.c.o"
+"CMakeFiles/tp1.dir/paint.c.o"
 
 # External object files for target tp1
 tp1_EXTERNAL_OBJECTS =
 
 tp1: CMakeFiles/tp1.dir/artist_ant.c.o
-tp1: CMakeFiles/tp1.dir/ant_engine.c.o
+tp1: CMakeFiles/tp1.dir/paint.c.o
 tp1: CMakeFiles/tp1.dir/build.make
 tp1: CMakeFiles/tp1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/christian/fiuba/compus/orgacompus-tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable tp1"

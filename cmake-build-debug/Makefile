@@ -123,33 +123,6 @@ tp1/fast:
 	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/build
 .PHONY : tp1/fast
 
-ant_engine.o: ant_engine.c.o
-
-.PHONY : ant_engine.o
-
-# target to build an object file
-ant_engine.c.o:
-	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/ant_engine.c.o
-.PHONY : ant_engine.c.o
-
-ant_engine.i: ant_engine.c.i
-
-.PHONY : ant_engine.i
-
-# target to preprocess a source file
-ant_engine.c.i:
-	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/ant_engine.c.i
-.PHONY : ant_engine.c.i
-
-ant_engine.s: ant_engine.c.s
-
-.PHONY : ant_engine.s
-
-# target to generate assembly for a file
-ant_engine.c.s:
-	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/ant_engine.c.s
-.PHONY : ant_engine.c.s
-
 artist_ant.o: artist_ant.c.o
 
 .PHONY : artist_ant.o
@@ -177,6 +150,33 @@ artist_ant.c.s:
 	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/artist_ant.c.s
 .PHONY : artist_ant.c.s
 
+paint.o: paint.c.o
+
+.PHONY : paint.o
+
+# target to build an object file
+paint.c.o:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/paint.c.o
+.PHONY : paint.c.o
+
+paint.i: paint.c.i
+
+.PHONY : paint.i
+
+# target to preprocess a source file
+paint.c.i:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/paint.c.i
+.PHONY : paint.c.i
+
+paint.s: paint.c.s
+
+.PHONY : paint.s
+
+# target to generate assembly for a file
+paint.c.s:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/paint.c.s
+.PHONY : paint.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tp1"
 	@echo "... edit_cache"
-	@echo "... ant_engine.o"
-	@echo "... ant_engine.i"
-	@echo "... ant_engine.s"
 	@echo "... artist_ant.o"
 	@echo "... artist_ant.i"
 	@echo "... artist_ant.s"
+	@echo "... paint.o"
+	@echo "... paint.i"
+	@echo "... paint.s"
 .PHONY : help
 
 

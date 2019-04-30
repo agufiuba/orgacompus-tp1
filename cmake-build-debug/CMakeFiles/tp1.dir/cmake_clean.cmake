@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tp1.dir/artist_ant.c.o"
-  "CMakeFiles/tp1.dir/ant_engine.c.o"
+  "CMakeFiles/tp1.dir/paint.c.o"
   "tp1.pdb"
   "tp1"
 )

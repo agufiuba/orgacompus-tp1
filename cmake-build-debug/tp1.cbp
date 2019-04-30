@@ -78,16 +78,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/christian/fiuba/compus/orgacompus-tp1/ant_engine.c">
-			<Option target="tp1"/>
-		</Unit>
-		<Unit filename="/home/christian/fiuba/compus/orgacompus-tp1/ant_engine.h">
-			<Option target="tp1"/>
-		</Unit>
 		<Unit filename="/home/christian/fiuba/compus/orgacompus-tp1/artist_ant.c">
 			<Option target="tp1"/>
 		</Unit>
-		<Unit filename="/home/christian/fiuba/compus/orgacompus-tp1/artist_ant.h">
+		<Unit filename="/home/christian/fiuba/compus/orgacompus-tp1/paint.c">
+			<Option target="tp1"/>
+		</Unit>
+		<Unit filename="/home/christian/fiuba/compus/orgacompus-tp1/paint.h">
 			<Option target="tp1"/>
 		</Unit>
 		<Unit filename="/home/christian/fiuba/compus/orgacompus-tp1/CMakeLists.txt">
